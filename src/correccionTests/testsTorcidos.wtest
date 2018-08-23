@@ -7,6 +7,6 @@ test "pepita come 5 gramos de mondongo" {
 }
 
 test "pepita come 10 gramos de alpiste" {
-	pepita.volar(alpiste)
+	pepita.comer(alpiste,10)
 	assert.equals(40, pepita.energia())
 }
