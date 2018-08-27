@@ -1,6 +1,4 @@
-
 object pepon {
-	// aca falta un atributo
 	var energia = 0
 	method energia() { 
 		return energia
@@ -21,27 +19,32 @@ object pepon {
 
 // implementar el objeto entero, salvo haceLoQueQuieras que lo damos hecho
 // ayuda: conviene ponerle dos atributos
+
 object pipa {
-	var energia = 0
-	method energia() { 
-		return energia
-	}
+	var kaka = 0
+	var gramosTotales = 0
 	method comer(cosa, gramos) { 
-		energia += cosa.energiaPorGramo() * gramos }// implementar
+		 gramosTotales +=gramos  
+		 
+	}// implementar
 	
 	method volar(kms) { 
-		energia -= (kms /2) + 10  
+		kaka +=kms   
 	}
-	
-	//method kmsRecorridos() {
-	//		}
-	//method gramosIngeridos(){
-	//	
-	//}/*
-	// * cuando le dicen a pipa que haga lo que quiera, no hace nada
-	//*/
-	method haceLoQueQuieras() {
+	method haceLoQueQuieras() { 
 		
-	}   // queda asi
-	// pregunta: ¿por qué es necesario agregar este método, sin código
+	}   // implementar
+
+	method kmsRecorridos() {
+		return kaka
+	}
+	method gramosIngeridos(){
+		return gramosTotales
+	}
 }
+
+//lograr que Roque pueda por momentos entrenar a Pepita y en otros a Pepón o Pipa.
+	//
+	
+	
+
