@@ -6,11 +6,15 @@ import comidas.*
 import masAves.*
 
 object roque {
-	//method tuPupiloEs(ave) { } // implementar
+	var pupilo = pepita
+	method tuPupiloEs(ave) { 
+		pupilo = ave
+			
+	} // implementar
 	method entrenar() {
-		pepita.volar(10)
-		pepita.comer(alpiste,300)
-		pepita.volar(5)
-		pepita.haceLoQueQuieras()
+		pupilo.volar(10)
+		pupilo.comer(alpiste,300)
+		pupilo.volar(5)
+		pupilo.haceLoQueQuieras()
 	}  // implementar
 }

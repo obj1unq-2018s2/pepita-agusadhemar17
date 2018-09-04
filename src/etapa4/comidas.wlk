@@ -9,6 +9,11 @@ object alpiste {
 		return 4  // completar
 	}
 }
+object mondongo {
+	method energiaPorGramo() { 
+		return 100
+	}
+}
 /*
  * el alcaucil da 20 joules por gramo
  */ 
@@ -43,19 +48,33 @@ object mijo {
 
 object canelones {
 	var energia = 20
-	method energiaPorGramo(){
-		return energia
-	}
+	var tieneSalsa = false
+	var tieneQueso = false
+	
 	method ponerSalsa(){
-		energia += 5
-	}
-	method sacarSalsa(){
-		energia -=5
+		tieneSalsa = true
 	}
 	method ponerQueso(){
-		energia+=7
+		tieneQueso = true
+	}
+	method sacarSalsa(){
+		tieneSalsa = false
 	}
 	method sacarQueso(){
-		energia-=7
+		tieneQueso = false
 	}
+	method energiaPorGramo(){
+		if(tieneSalsa and tieneQueso){ 
+			return 32
+		}
+		else if(tieneSalsa and not tieneQueso){
+			return 25
+		}
+		else if (not tieneSalsa and tieneQueso){
+			return 27
+		}
+		else   {return energia }
+		}
+
+	
 }
